@@ -1,0 +1,206 @@
+{
+  "basics": {
+    "name": "Felipe Macedo",
+    "label": "Desenvolvedor Full Cycle | Back-End, Go e IA Aplicada",
+    "summary": "Desenvolvedor de software com foco em back-end, integração de sistemas e arquitetura limpa. Experiência sólida em Go e Java (Spring Boot, JavaFX), atuando com microsserviços, mensageria, testes automatizados e práticas modernas de CI/CD. Apaixonado por automação, segurança e inteligência artificial aplicada ao desenvolvimento, com código sempre voltado à performance, clareza e escalabilidade.",
+    "location": {
+      "country": "Brasil",
+      "city": "São Paulo",
+      "region": "SP"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "felipemacedo1",
+        "url": "https://www.linkedin.com/in/felipemacedo1/"
+      },
+      {
+        "network": "GitHub",
+        "username": "felipemacedo1",
+        "url": "https://github.com/felipemacedo1"
+      },
+      {
+        "network": "GitHub Organization",
+        "username": "Growthfolio",
+        "url": "https://github.com/growthfolio"
+      }
+    ]
+  },
+  "work": [
+    {
+      "position": "Analista de Sistemas Jr.",
+      "organization": "Sansuy S.A. Indústria de Plásticos",
+      "startDate": "2025-03",
+      "summary": "Atuação no ERP corporativo (SIAGI) em módulos de Engenharia, Lista Técnica e Produção. Modernização de sistemas legados em Java 8/FX, integração com novos serviços REST e refatoração de UI/UX. Aplicação do padrão Facade e arquitetura modular multi-maven. Implementação de testes e melhorias de performance em serviços de grande volume de dados industriais.",
+      "technologies": [
+        "Java 8/23",
+        "Spring Boot",
+        "JavaFX",
+        "EJB",
+        "SQL Server",
+        "SVN",
+        "NetBeans",
+        "Eclipse"
+      ]
+    },
+    {
+      "position": "Desenvolvedor Backend (Go)",
+      "organization": "Asapcard",
+      "startDate": "2024-02",
+      "endDate": "2024-08",
+      "summary": "Atuação em fintech especializada em soluções de pagamento, autorização de transações e conciliação financeira. Desenvolvimento e manutenção de microsserviços em Go, com mensageria assíncrona via RabbitMQ e filas distribuídas para alto volume de requisições. Implementação de APIs REST seguras com JWT, criptografia simétrica e assimétrica, e integração com gateways de pagamento. Construção de pipelines CI/CD em AWS com GitHub Actions, execução de testes automatizados (unitários, de integração e end-to-end), e monitoramento com Prometheus e Grafana. Participação em revisões de código, modelagem de banco relacional e otimização de queries em PostgreSQL. Entrega contínua com versionamento semântico e padronização de logs e métricas para auditoria de transações financeiras.",
+      "technologies": [
+        "Go",
+        "RabbitMQ",
+        "PostgreSQL",
+        "Docker",
+        "AWS (ECS, S3, Lambda, CloudWatch)",
+        "GitHub Actions",
+        "Gorilla WebSocket",
+        "Chi Router",
+        "JWT",
+        "Prometheus",
+        "Grafana",
+        "OpenAPI/Swagger",
+        "Redis",
+        "Testify",
+        "Mockery",
+        "Wiremock",
+        "Postman/Newman"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Centro Universitário FMU | FIAM-FAAM",
+      "area": "Ciência da Computação (Bacharelado)",
+      "startDate": "2025-07",
+      "endDate": "2029-07"
+    },
+    {
+      "institution": "Universidade Anhembi Morumbi",
+      "area": "Gestão da Tecnologia da Informação (Tecnólogo)",
+      "startDate": "2022-08",
+      "endDate": "2024-12"
+    },
+    {
+      "institution": "Generation Brasil / AWS re:Start",
+      "area": "Desenvolvimento Full Stack Java + Cloud AWS",
+      "endDate": "2025-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Back-end Development",
+      "keywords": [
+        "Go",
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "Microservices",
+        "RabbitMQ",
+        "JWT",
+        "SQL",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Inteligência Artificial Aplicada",
+      "keywords": [
+        "LLMs",
+        "OpenAI API",
+        "LangChain",
+        "Python",
+        "FastAPI",
+        "Machine Learning básico",
+        "Automação de fluxos com IA"
+      ]
+    },
+    {
+      "name": "Front-end Development",
+      "keywords": [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Bootstrap",
+        "Tailwind",
+        "JavaFX"
+      ]
+    },
+    {
+      "name": "DevOps & Cloud",
+      "keywords": [
+        "AWS",
+        "Docker Compose",
+        "CI/CD",
+        "GitHub Actions",
+        "EC2",
+        "S3",
+        "Lambda",
+        "CloudWatch",
+        "Kubernetes (básico)"
+      ]
+    },
+    {
+      "name": "Data & Security",
+      "keywords": [
+        "PostgreSQL",
+        "Redis",
+        "Criptografia AES/RSA",
+        "OAuth2",
+        "TLS/SSL",
+        "Hashing (bcrypt, SHA256)",
+        "Segurança de APIs",
+        "Auditoria de transações"
+      ]
+    },
+    {
+      "name": "Testes Automatizados",
+      "keywords": [
+        "Unitários (Testify, JUnit)",
+        "Integração (Wiremock, Postman)",
+        "End-to-End (Newman, Cypress)",
+        "Mocks e Fixtures",
+        "Cobertura e regressão contínua",
+        "QA orientado a Dev"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "PriceGuard API",
+      "description": "Sistema de monitoramento e análise de criptomoedas com Go, PostgreSQL, Redis e WebSocket. Integração com CoinGecko e Binance, cálculo de indicadores técnicos e alertas em tempo real.",
+      "technologies": ["Go", "Docker", "PostgreSQL", "Redis", "WebSocket", "CoinGecko API"],
+      "url": "https://github.com/felipemacedo1/go-priceguard-api"
+    },
+    {
+      "name": "Growthfolio Terminal",
+      "description": "Portfólio interativo estilo terminal com comandos, histórico e easter eggs. Interface responsiva com animações e layout dark.",
+      "technologies": ["TypeScript", "React", "Tailwind", "Framer Motion"],
+      "url": "https://github.com/growthfolio/terminal"
+    },
+    {
+      "name": "Spring MCD Wallet",
+      "description": "Wallet Bitcoin em Java com integração via bitcoinj e arquitetura Spring modular, incluindo integração SPV e testes de integração CI/CD.",
+      "technologies": ["Java", "Spring Boot", "bitcoinj", "JUnit", "GitHub Actions"],
+      "url": "https://github.com/felipemacedo1/spring-mcd-wallet"
+    }
+  ],
+  "languages": [
+    { "language": "Portuguese", "fluency": "Native" },
+    { "language": "English", "fluency": "Intermediate (focado em comunicação e fluência técnica)" },
+    { "language": "Spanish", "fluency": "Basic (leitura e compreensão)" }
+  ],
+  "interests": [
+    "Criptografia e Segurança da Informação",
+    "IA aplicada ao desenvolvimento de software",
+    "Fintechs e Mercado Financeiro",
+    "Engenharia de Prompt e LLMs",
+    "Arquitetura de Software e Clean Code"
+  ],
+  "objectives": {
+    "shortTerm": "Consolidar atuação como desenvolvedor pleno em back-end (Go e Java), com domínio de microsserviços, mensageria e testes automatizados.",
+    "midTerm": "Atuar em projetos internacionais e multiculturais aplicando IA e automação para escalar soluções financeiras seguras e inteligentes.",
+    "longTerm": "Liderar iniciativas de software e IA aplicada, criando produtos SaaS de impacto e contribuindo ativamente com a comunidade open source."
+  }
+}
