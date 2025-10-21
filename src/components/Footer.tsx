@@ -9,7 +9,7 @@ export const Footer = () => {
       className="section-container text-center py-12 border-t border-dark-border mt-12"
     >
       <p className="text-dark-muted">
-        Built with <span className="text-red-500 animate-pulse">❤️</span> & GitHub Copilot
+        Built with hate in <span className="text-red-500 animate-pulse">❤️</span> & GitHub Copilot
       </p>
       <p className="text-xs text-dark-muted mt-2">
         Powered by React + TypeScript + Vite + TailwindCSS + Framer Motion

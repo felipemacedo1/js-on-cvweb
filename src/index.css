@@ -1,89 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
   * {
-    @apply box-border;
+    box-sizing: border-box;
   }
 
   html {
-    @apply scroll-smooth;
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-dark-bg text-dark-text font-mono antialiased;
+    background-color: #0e1116;
+    color: #e5e7eb;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
     font-size: 16px;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold;
+    font-weight: 600;
   }
 
   h1 {
-    @apply text-4xl md:text-5xl;
+    font-size: 2.25rem;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl;
+    font-size: 1.875rem;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl;
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2.25rem;
+    }
+    h3 {
+      font-size: 1.875rem;
+    }
   }
 
   a {
-    @apply text-dark-accent hover:text-dark-neon transition-colors duration-200;
+    color: #58a6ff;
+    transition: color 0.2s;
+  }
+
+  a:hover {
+    color: #7ee787;
   }
 }
 
 @layer components {
   .section-container {
-    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .section-container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 
   .card {
-    @apply bg-dark-surface border border-dark-border rounded-lg p-6 transition-all duration-300;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: all 0.3s;
   }
 
   .card:hover {
-    @apply border-dark-neon shadow-lg;
+    border-color: #7ee787;
     box-shadow: 0 0 20px rgba(126, 231, 135, 0.2);
   }
 
   .badge {
-    @apply inline-block bg-dark-surface border border-dark-border px-3 py-1 rounded-full text-sm text-dark-muted;
+    display: inline-block;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    color: #8b949e;
   }
 
   .badge:hover {
-    @apply border-dark-accent text-dark-accent;
+    border-color: #58a6ff;
+    color: #58a6ff;
   }
 
   .section-title {
-    @apply text-2xl md:text-3xl font-bold text-dark-neon mb-6 flex items-center gap-2;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #7ee787;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 1.875rem;
+    }
   }
 
   .section-title::before {
     content: '>';
-    @apply text-dark-accent;
+    color: #58a6ff;
   }
 
   .link-external::after {
     content: ' ↗';
-    @apply text-dark-accent text-sm;
+    color: #58a6ff;
+    font-size: 0.875rem;
   }
 
   .divider {
-    @apply w-full h-px bg-gradient-to-r from-transparent via-dark-border to-transparent my-8;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #30363d, transparent);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-dark-accent to-dark-neon bg-clip-text text-transparent;
+    background: linear-gradient(to right, #58a6ff, #7ee787);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .glow-text {
@@ -92,6 +158,17 @@
 
   .terminal-cursor::after {
     content: '▊';
-    @apply animate-pulse text-dark-neon ml-1;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    color: #7ee787;
+    margin-left: 0.25rem;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
   }
 }
